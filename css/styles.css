@@ -12,7 +12,7 @@
   --line-color: #ececec;
   --hero-bgc: #c4c4c4;
   --footer-socials-bgc: #44454e;
-  --clients-border-color: #afb1b8;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -141,11 +141,6 @@ a {
   margin-left: 50px;
 }
 
-.mail-content,
-.phone-content {
-  align-items: center;
-}
-
 .icons-header {
   fill: currentColor;
   margin-right: 10px;
@@ -175,7 +170,6 @@ a {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
 
   text-align: center;
   padding: 200px 0;
@@ -185,8 +179,7 @@ a {
     url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid var(--header-logo);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-position: center;
 }
 
 .hero-title {
@@ -408,12 +401,11 @@ a {
 .socials-list {
   display: flex;
   justify-content: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  color: var(--icons-color);
 }
 
 .social-item {
-  width: calc((100%-30px) / 4);
+  margin-right: 10px;
 }
 
 .social-item:last-child {
@@ -454,11 +446,11 @@ a {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--clients-border-color);
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  fill: var(--secondary-text-color);
+  fill: var(--icons-color);
 }
 
 .clients-item {
